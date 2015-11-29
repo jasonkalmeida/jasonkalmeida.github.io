@@ -1,3 +1,0 @@
-/**
- * @author Kyaw Myint Cho
- */
