@@ -290,3 +290,65 @@ footer
 	opacity:.8;
 	font-size:16px;
 }
+
+@media screen and (max-width: 768px) {
+
+	
+	.navbar-right > li
+	{
+        display: inline-block;
+		
+	}
+	ul.nav.navbar-nav.navbar-right
+	{
+		text-align: center;
+	}
+	
+	input#email.form-control
+	{
+		width: 100%;
+	}
+	
+	button.btn.btn-default
+	{
+		width: 100%;
+	}
+	
+	.form-group
+	{
+		margin-bottom:0px;
+	}
+	
+    /*.row {
+           position: relative;
+       }
+
+       .navbar-header {
+           left: 0;
+           position: absolute;
+           top: 0;
+       }
+
+       .navbar-brand {
+           float: none;
+           box-sizing: border-box;
+           height: 50px;
+           padding: 14px 50px;
+           text-align: center;
+           width: 100%;
+       }
+
+       .navbar-right {
+           margin: 0;
+           position: absolute;
+           right: 0;
+           top: 0;
+       }
+
+       .navbar-right > li {
+           display: inline-block;
+           margin-top: 4px;
+       }
+   }
+		*/
+}
