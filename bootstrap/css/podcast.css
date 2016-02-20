@@ -316,6 +316,7 @@ footer
 	{
 		width: 100%;
 		font-size: 13px;
+		min-width: 0;
 	}
 	
 	button.btn.btn-default
