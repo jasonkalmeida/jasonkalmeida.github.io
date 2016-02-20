@@ -315,6 +315,7 @@ footer
 	input#email.form-control
 	{
 		width: 100%;
+		font-size: 13px;
 	}
 	
 	button.btn.btn-default
