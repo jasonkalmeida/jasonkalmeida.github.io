@@ -18,3 +18,12 @@ function contactScroll() {
 	        scrollTop: $("#contact").offset().top
 	    }, 400);
 };
+
+function subscribed()
+{
+	$(document).ready(function(){
+	  $('#mc-embedded-subscribe-form').submit(function(){
+	    $('#email').attr('placeholder','Thank you for subscribing!');
+	  });
+	});
+}
