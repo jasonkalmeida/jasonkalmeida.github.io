@@ -13,6 +13,10 @@
     src: url("fonts/UnicaOne-Regular.ttf");
 }
 
+@font-face {
+    font-family: FontAwesome;
+    src: url("fonts/fontawesome-webfont.ttf");
+}
 
 
 body
@@ -160,7 +164,38 @@ button.btn.btn-default
 	  border-radius:0px;
 	  height: 67px;
 	  width: 142px;
+	  
 }
+
+button.btn.btn-default:hover {
+  color: white;
+  letter-spacing: 3px;
+  
+}
+
+
+
+button#button.btn.btn-default.change {
+  
+  color: white;
+  font-family: 'FontAwesome';
+  letter-spacing: 2px;
+  line-height: 30px;
+  
+  /*font-size: 20px;*/
+  /*padding: 10px 20px 10px 20px;*/
+  text-decoration: none;
+  height: 67px;
+  width: 142px;
+  font-size: 24px;
+  
+  
+}
+
+
+
+
+
 
 .episode
 {
@@ -324,6 +359,11 @@ footer
 		width: 100%;
 	}
 	
+	button#button.btn.btn-default.change
+	{
+		width:100%;
+	}
+	
 	.form-group
 	{
 		margin-bottom:0px;
@@ -364,3 +404,22 @@ footer
 		*/
 }
 
+.spinner {
+  box-sizing: border-box;
+  height: 40px;
+  width: 40px;
+  margin: auto;
+  border: 0px solid white;
+  border-radius: 50%;
+  box-shadow: 0 -1px 0 1px white inset;
+  animation: rotate 1s infinite linear;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} 
