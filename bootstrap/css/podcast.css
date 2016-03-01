@@ -13,11 +13,6 @@
     src: url("fonts/UnicaOne-Regular.ttf");
 }
 
-/*@font-face {
-    font-family: FontAwesome;
-    src: url("fonts/fontawesome-webfont.ttf");
-}*/
-
 @font-face {
 	font-family: 'FontAwesome';
 	  src: url('../fonts/fontawesome-webfont.eot?v=4.0.3');
@@ -201,6 +196,22 @@ button#button.btn.btn-default.change {
   font-size: 24px;
   
   
+}
+
+button#button.btn.btn-default.change-error
+{
+    color: white;
+    font-family: 'FontAwesome';
+    letter-spacing: 2px;
+    line-height: 30px;
+	background-color: #cc0000;
+  
+    /*font-size: 20px;*/
+    /*padding: 10px 20px 10px 20px;*/
+    text-decoration: none;
+    height: 67px;
+    width: 142px;
+    font-size: 24px;
 }
 
 

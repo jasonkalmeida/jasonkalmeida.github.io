@@ -1,5 +1,4 @@
 
-
 function showScroll() {
     $('html, body').animate({
         scrollTop: $("#show").offset().top
@@ -29,6 +28,9 @@ function subscribed()
 $(function() {
   $( "#button" ).click(function() {
 	  
+	  //alert(document.getElementById("email").className);
+	  
+	  
 	  var el = document.getElementById("button");
 	     if (el.innerHTML == "SUBMIT") 
 	     {
@@ -40,12 +42,25 @@ $(function() {
 		  var el = document.getElementById("button");
 		     if (el.innerHTML == '<div class="spinner"></div>') 
 		     {
-		         el.innerHTML = '&#xf00c;';
+				 if(document.getElementById("email").className == 'form-control mce_inline_error')
+				 {
+					 el.innerHTML = '&#xf00d;';
+					 $( "#button" ).addClass( "change-error", 450);
+					 $('#email').attr('placeholder',' Hmmm, the email you provided seems invalid. Please try again. ');
+					 
+					 
+				 }
+				 else if(document.getElementById("email").className == 'form-control valid')
+				 {
+					 el.innerHTML = '&#xf00c;';
+					 $( "#button" ).addClass( "change", 450);
+					 $('#email').attr('placeholder','Thank you for subscribing!');
+					 
+					 
+				 }
 		     }
 			 
-			 $( "#button" ).addClass( "change", 450);
 			 
-			 $('#email').attr('placeholder','Thank you for subscribing!');
 		    
 		
          }, 3250 );
