@@ -13,9 +13,14 @@
     src: url("fonts/UnicaOne-Regular.ttf");
 }
 
-@font-face {
+/*@font-face {
     font-family: FontAwesome;
     src: url("fonts/fontawesome-webfont.ttf");
+}*/
+
+@font-face {
+	font-family: 'FontAwesome';
+	src: url('fonts/fontawesome-webfont.ttf')  format('truetype');
 }
 
 
