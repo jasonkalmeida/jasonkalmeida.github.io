@@ -46,8 +46,18 @@ $(function() {
 				 {
 					 el.innerHTML = '&#xf00d;';
 					 $( "#button" ).addClass( "change-error", 450);
-					 $('#email').attr('placeholder',' Hmmm, the email you provided seems invalid. Please try again. ');
+					 $('#email').attr('placeholder',' Invalid email. Please try again. ');
 					 
+					 setTimeout(function() {
+						 
+						 $( "#button" ).removeClass( "change-error" );
+						 el.innerHTML = 'SUBMIT';
+						 $('#email').attr('placeholder',' Submit your email to never miss an episode... ');
+						 
+						 
+						 
+			         }, 4250 );
+						 
 					 
 				 }
 				 else if(document.getElementById("email").className == 'form-control valid')

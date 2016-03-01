@@ -386,6 +386,11 @@ footer
 		width:100%;
 	}
 	
+	button#button.btn.btn-default.change-error
+	{
+		width:100%;
+	}
+	
 	.form-group
 	{
 		margin-bottom:0px;
